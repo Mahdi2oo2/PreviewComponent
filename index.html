@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Code Editor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="dark">
+
+<div class="container">
+
+    <!-- Preview -->
+    <div class="preview-area">
+        <iframe id="preview"></iframe>
+    </div>
+
+    <!-- Editor -->
+    <div class="editor-area">
+
+        <div class="top-bar">
+            <div class="tabs">
+                <button class="tab active" data-target="html">HTML</button>
+                <button class="tab" data-target="css">CSS</button>
+            </div>
+
+            <div class="actions">
+                <button id="themeToggle">🌓</button>
+                <button id="copyBtn">📋</button>
+            </div>
+        </div>
+
+        <textarea id="html" class="code-box active" placeholder="HTML code..."></textarea>
+        <textarea id="css" class="code-box" placeholder="CSS code..."></textarea>
+
+    </div>
+
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
