@@ -1,11 +1,11 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 body.dark {
-    background: #212121;
+    background: #1e1e1e;
     color: #fff;
 }
 
@@ -22,14 +22,26 @@ body.light {
 /* Preview */
 .preview-area {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     border-left: 1px solid #444;
+    background: #111;
+}
+
+.preview-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: #222;
+    color: #fff;
 }
 
 .preview-area iframe {
     width: 100%;
     height: 100%;
-    background: white;
     border: none;
+    background: white;
+    transition: background 0.3s;
 }
 
 /* Editor */
@@ -54,6 +66,7 @@ body.light {
     background: #444;
     color: white;
     border-radius: 4px;
+    transition: 0.2s;
 }
 
 .tabs .active {
@@ -84,4 +97,20 @@ body.light {
 
 .code-box.active {
     display: block;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .editor-area {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .preview-area {
+        height: 50vh;
+    }
 }
