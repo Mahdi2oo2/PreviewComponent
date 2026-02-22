@@ -18,6 +18,9 @@
 
 کدنویسی ماژولار (HTML + CSS + JS جدا)
 
+![Live Code Editor Screenshot](Screenshot.jpeg)
+
+
 
 🧩 ساختار پروژه
 
